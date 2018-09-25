@@ -1,4 +1,4 @@
-## chatAppWithReactAndChatkit
+## ChatAppWithReactAndChatkit
 
 Keywords: **React, Pusher Chatkit**.
 
