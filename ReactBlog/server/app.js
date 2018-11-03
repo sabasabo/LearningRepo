@@ -5,7 +5,6 @@ const session = require('express-session');
 const cors = require('cors');
 const errorHandler = require('errorhandler');
 const mongoose = require('mongoose');
-const morgan = require('morgan');
 
 
 mongoose.promise = global.Promise;
@@ -14,8 +13,9 @@ const isProduction = process.env.NODE_ENV === 'productuon';
 
 const app = express();
 
+app.options('*', cors()) 
 app.use(cors());
-app.use(morgan);
+app.use(require('morgan')('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -25,7 +25,7 @@ if (!isProduction) {
     app.use(errorHandler());
 }
 
-mongoose.connect('mongodb://lir:yofiyofi1@ds115543.mlab.com:15543/react-blog');
+mongoose.connect('mongodb://lir:yofiyofi1@ds115543.mlab.com:15543/react-blog').catch((reason) => console.log(" failed to connect MLab because:" + reson));
 mongoose.set('debug', true);
 
 // Models:
@@ -33,7 +33,7 @@ mongoose.set('debug', true);
 require('./models/Articles');
 
 // Routes:
-//const routes = require('./routes');
+app.use(require('./routes'));
 
 app.use((req, res, next) => {
     let error = new Error('Not Found');
@@ -54,7 +54,9 @@ app.use((err, req, res) => {
 });
 
 // const server = 
-app.listen(8000, () => console.log('Server started on http://localhost:8000'));
+app.listen(8000, function(){ 
+	console.log('Server started on http://localhost:8000');
+});
 
 
 
