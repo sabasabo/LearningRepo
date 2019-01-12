@@ -26,7 +26,7 @@ class Form extends React.Component {
         const {onSubmit, onEdit, articleToEdit} = this.props;
         const {title, body, author} = this.state;
         if (articleToEdit === undefined) {
-            axios.post('http://localhost:8000/api/Articles', {
+            axios.post('http://localhost:443/api/Articles', {
                 title,
                 body,
                 author
@@ -34,7 +34,7 @@ class Form extends React.Component {
                 title: '', body: '', author: ''
             })).catch(error => console.log(error));
         } else {
-            axios.patch(`http://localhost:8000/api/articles/${articleToEdit._id}`, {
+            axios.patch(`http://localhost:443/api/articles/${articleToEdit._id}`, {
                 title,
                 body,
                 author
