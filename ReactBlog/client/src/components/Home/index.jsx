@@ -15,12 +15,12 @@ class Home extends React.Component {
 
     componentDidMount() {
         const {onLoad} = this.props;
-        axios('http://localhost:8000/api/articles').then(res => onLoad(res.data)).catch(error => console.log(error));
+        axios('http://localhost:443/api/articles').then(res => onLoad(res.data)).catch(error => console.log(error));
     }
 
     handleDelete(id) {
         const {onDelete} = this.props;
-        axios.delete(`http://localhost:8000/api/articles/${id}`).then(() => onDelete(id)).catch(error => console.log(error));
+        axios.delete(`http://localhost:443/api/articles/${id}`).then(() => onDelete(id)).catch(error => console.log(error));
     }
 
     handleEdit(article) {

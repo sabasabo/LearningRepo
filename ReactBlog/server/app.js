@@ -53,9 +53,11 @@ app.use((err, req, res) => {
 
 });
 
-// const server = 
-app.listen(8000, function(){ 
-	console.log('Server started on http://localhost:8000');
+// Zeit Now port
+const port = 443;
+ 
+app.listen(port, function(){ 
+	console.log(`Server started on http://localhost:${port}`);
 });
 
 
