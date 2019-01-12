@@ -5,5 +5,5 @@ This repo contains some mini side projects and tutorials i followed.
 The code: [link](chatAppWithReactAndChatkit)
 
 
-- Simple blog with Rect Redux Mongo and Node: https://server-npkgtpvaex.now.sh/  
+- Simple blog with React Redux Mongo and Node: https://server-npkgtpvaex.now.sh/  
 The code: [link](ReactBlog)
