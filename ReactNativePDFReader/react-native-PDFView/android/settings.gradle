@@ -1,0 +1,2 @@
+rootProject.name = 'reactnativepdf'
+include ':app'
