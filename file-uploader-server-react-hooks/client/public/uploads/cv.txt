@@ -1,0 +1,26 @@
+Experience
+1.1.18 - present
+Full-Stack developer - Captain, IAF - Israeli Air Force
+Technologies: Nodejs, Javascript, Angularjs, React (lately), GraphQL, MongoDB, Redis, Java - with Vetx and Google Guice , docker swarm
+
+23.4.17-1.1.18
+Gateways - Captain, IAF - Israeli Air Force
+With a side job of Linux administartor.
+Technologies: Java, Linux, Bash
+
+26.8.15 - 23.4.17
+Gateways - First Lieutenant, IAF - Israeli Air Force
+With a side job of devops engineer.
+Technologies: Java, CI CD - with Bamboo
+
+1.5.14 - 26.8.15
+Algorithm R&D - Academic Second Lieutenant (чо"а), IAF - Israeli Air Force
+Semi-realtime multi-sensor system based on an algorithmic core. Requires
+performance analysis and geometric and physical algorithms design and
+research
+Technologies: Java, Matlab
+
+Education:
+2010 - 2014
+B.Sc Computer Science, Haifa University.
+Average 82. Completed in parallel to high-school studies.
